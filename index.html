@@ -9,7 +9,24 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body id="toppen">
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="siteMenu">
+  <span></span><span></span><span></span>
+</button>
+<div class="menu-backdrop" id="menuBackdrop" hidden></div>
+<nav class="site-menu" id="siteMenu" aria-label="Hovedmeny" aria-hidden="true">
+  <div class="site-menu-head">
+    <strong>80 år</strong>
+    <button class="menu-close" id="menuClose" type="button" aria-label="Lukk meny">×</button>
+  </div>
+  <a href="#toppen">Forsiden</a>
+  <a href="#takk">Velkommen</a>
+  <a href="#starten">1946 · starten</a>
+  <a href="#tidsreisen">Milepæler gjennom 80 år</a>
+  <a href="#musikkreisen">Musikken gjennom tiårene</a>
+  <a href="#festviser">Festviser til Paul</a>
+</nav>
+
 <!--
   REDIGERING:
   - Innhold, YouTube-spillelister, priser og historietekster: content.js
@@ -184,9 +201,168 @@
       <div class="music-history-grid" id="musicHistoryGrid"></div>
 
       <div class="music-note">
-        Når du har laget Spotify-spillelistene, kan lenken til hvert tiår legges rett inn her.
-        Da kan gjestene lese historien først og deretter åpne musikken fra samme periode.
+        Velg et tiår over for å lese musikkhistorien, og åpne YouTube Music-spillelisten direkte fra samme kort.
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="festviser">
+  <div class="wrap">
+    <div class="songbook-head">
+      <div>
+        <div class="kicker">Laget til 80-årsdagen</div>
+        <h2>Festviser til Paul</h2>
+      </div>
+      <p class="subtitle">Tre viser laget til feiringen. Trykk på en tittel for å åpne teksten.</p>
+    </div>
+
+    <div class="party-song-list">
+      <details class="party-song">
+        <summary>
+          <span class="party-song-no">01</span>
+          <span><strong>Paul fødselsdag</strong><small>Melodi: Bamsefars fødselsdag · Thorbjørn Egner</small></span>
+          <span class="party-song-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="party-song-body">
+          <div class="verse"><strong>1. vers</strong>
+            <p>I dag skal Paulen feires her,<br>
+            av alle de som har ham kjær!<br>
+            Vår kjære Paul blir åtti år,<br>
+            en velfortjent hyllest han skal få.<br>
+            En Hinna-gutt så vis og grei,<br>
+            som gleder folk på livets vei!<br>
+            Hipp hurra for Paulen vår<br>
+            som fyller åtti år!</p>
+          </div>
+          <div class="verse"><strong>2. vers</strong>
+            <p>I shantykoret stemmer han<br>
+            i muntre sang og takter,<br>
+            på reisefot han drar av sted<br>
+            til nye, fjerne trakter.<br>
+            På bridgen tar han mangt et stikk,<br>
+            med klok og sikker spilleskikk!<br>
+            Hipp hurra for Paulen vår<br>
+            som fyller åtti år!</p>
+          </div>
+          <div class="verse"><strong>3. vers</strong>
+            <p>Når de mørkeblå skal spille kamp,<br>
+            er Paulen på sin faste plass,<br>
+            og heier fram sitt hjemmelag<br>
+            med duggfriskt øl i kjempeglass!<br>
+            Når Viking scorer mål på ny,<br>
+            da synger far og folk i by!<br>
+            Hipp hurra for Paulen vår<br>
+            som fyller åtti år!</p>
+          </div>
+          <div class="verse"><strong>4. vers</strong>
+            <p>Med døtre, bridge og shantysang,<br>
+            og Olaug ved sin side,<br>
+            har Paulen styrt sin skute flott<br>
+            med kjærlighet som han har fått!<br>
+            Nå samles vi i lystig lag,<br>
+            og feirer Paulen sin store dag.<br>
+            Så løft ditt glass og skål i kor<br>
+            for beste Paul på jord!</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="party-song">
+        <summary>
+          <span class="party-song-no">02</span>
+          <span><strong>Kaffevisa</strong><small>Melodi: Tyven, tyven</small></span>
+          <span class="party-song-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="party-song-body">
+          <div class="verse">
+            <p>Hva er livet uten kaffe?<br>
+            Gode venner, gi oss svar<br>
+            Kan en festlig stund man skaffe<br>
+            Når man ingen kaffe har?<br>
+            Nei, nei langt i fra<br>
+            Kaffe må vi ha<br>
+            Den vil alltid gi<br>
+            Humør og energi</p>
+          </div>
+          <div class="verse">
+            <p>Her vi kaffens pris vil synge<br>
+            Den gjør livet lyst og lett,<br>
+            Borte blir alt som kan tynge<br>
+            I en herlig kaffeskvett<br>
+            Drikk som aldri før<br>
+            Kaffen gir humør<br>
+            Er du trist og lei<br>
+            Er kaffen god for deg</p>
+          </div>
+          <div class="verse">
+            <p>Kaffen styrker, kaffen trøster<br>
+            Kaffen smaker aller best<br>
+            Kaffebror og kaffesøster<br>
+            Drikk med fryd den siste rest<br>
+            Hver en kaffekopp<br>
+            Kvikker sin og kropp<br>
+            Følger du deg trett,<br>
+            Da – ta en kaffeskvett</p>
+          </div>
+          <div class="verse">
+            <p>La oss så en takk få bringe<br>
+            Kaffe Paul – vår gode venn,<br>
+            For hver kopp som vi får svinge<br>
+            Om og om og om igjen<br>
+            Ingen er som han<br>
+            Denne hedersmann,<br>
+            Når han for oss står<br>
+            Og byr en kaffetår</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="party-song">
+        <summary>
+          <span class="party-song-no">03</span>
+          <span><strong>Velkommen til bords</strong><small>Melodi: Teddybjørnens vise</small></span>
+          <span class="party-song-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="party-song-body">
+          <div class="verse"><strong>1. vers</strong>
+            <p>Nå har vi stelt til kjempefest for jubilanten vår,<br>
+            og Paulen skal vi feire godt som fyller åtti år!<br>
+            Ja, koldtbordet det er dekket opp på rekke og på rad,<br>
+            forsyn deg nå fra alle fat så magen den blir glad!<br>
+            Her er det laks og spekemat og alt hva sulten vil,<br>
+            og gode venner samlet inn som hører festen til!<br>
+            Så forsyn deg no fra alle fat og spis deg god og mett,<br>
+            ja, kos deg glugg i hele kveld med hver en deilig rett!</p>
+          </div>
+          <div class="verse"><strong>2. vers</strong>
+            <p>Når alle har fått spist seg mett<br>
+            og praten går så godt,<br>
+            da setter vi frem flere fat med kaker pent og flott.<br>
+            Med kvæfjordkake, marsipan og nykokt kaffetår,<br>
+            nå skal det smakes nydelig for jubilanten vår!<br>
+            For kaker hører alltid til når Paulen feires skal,<br>
+            med gode venner samlet inn i denne glade sal!<br>
+            Så nyt no hver en kakebit og kos deg som du vil,<br>
+            for latter, sang og kaffekos er det som hører til!</p>
+          </div>
+          <div class="verse"><strong>3. vers</strong>
+            <p>Nå reiser vi oss alle opp og stemmer i en sang,<br>
+            og hyller jubilanten vår med latter kvelden lang!<br>
+            For åtti år er ingen ting, Paulen holder koken godt,<br>
+            og han er en kjernekar som klarer alt så flott!<br>
+            Nå klinker vi i glassene og tar en felles skål,<br>
+            og koser oss i sammen her og når vårt festemål!<br>
+            Så løfter vi no glasset høyt og roper ut i kor:<br>
+            Gratulerer så med dagen, Paul – den beste her på jord</p>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="songbook-note">
+      Når lydopptakene er klare, kan de legges rett inn under hver vise uten å endre resten av siden.
     </div>
   </div>
 </section>
@@ -279,7 +455,7 @@ document.getElementById("randomBtn").addEventListener("click",()=>{
 
 
 
-const decadeStories = [{"key": "40", "label": "1946–1949", "title": "Etterkrigstid, swing og croonere", "sub": "De første årene i tidsreisen", "p1": "Da tidsreisen begynner i 1946, er storband, swing, jazz og vokalpop fortsatt viktige deler av populærmusikken. Radioen er sentral, og grammofonplaten er et fysisk produkt man setter seg ned for å høre på.", "p2": "Samtidig ligger spirene til noe nytt i rhythm & blues, gospel og elektrisk blues. Sterkere rytmer, elektriske gitarer og nye innspillingsmetoder skal snart være med på å skape rock'n'roll.", "highlight": "Musikken begynner gradvis å gå fra storbandenes epoke til mindre grupper, tydeligere rytmer og en mer ungdomsrettet lyd.", "tags": ["Swing", "Jazz", "Vokalpop", "Rhythm & blues"], "playlist": ""}, {"key": "50", "label": "1950-tallet", "title": "Rock'n'roll skaper en ungdomskultur", "sub": "Gitaren, 45-platen og tenåringene", "p1": "På 1950-tallet bryter rock'n'roll for alvor gjennom. Musikken henter mye fra afroamerikansk rhythm & blues, gospel og blues, samtidig som den blandes med country. Artister som Chuck Berry, Little Richard og Elvis Presley blir symboler på en ny lyd.", "p2": "Dette er også tiåret hvor tenåringer blir en tydelig målgruppe for musikkindustrien. Billigere platespillere, 45-plater, radio og etter hvert transistorapparater gjør det lettere å ha sin egen musikk – uavhengig av foreldrenes smak.", "highlight": "Rock'n'roll endrer ikke bare lyden. Den gjør populærmusikken til en sterkere del av ungdomsidentitet, mote og opprør.", "tags": ["Rock'n'roll", "Rhythm & blues", "Doo-wop", "Country"], "playlist": ""}, {"key": "60", "label": "1960-tallet", "title": "Pop, soul og studioet som instrument", "sub": "Beatles, Motown og store samfunnsendringer", "p1": "1960-tallet eksploderer i ulike retninger. The Beatles og andre britiske band får enorm internasjonal betydning, Motown gjør soul til stor popmusikk, og folkrock knytter musikken tett til protest, politikk og samfunnsendringer.", "p2": "Mot slutten av tiåret blir studioet nesten et instrument i seg selv. Flersporsopptak, nye effekter og eksperimentering gjør det mulig å lage musikk som ikke nødvendigvis kan gjenskapes på samme måte på en scene.", "highlight": "Populærmusikk blir i større grad et sted der en hel generasjon diskuterer identitet, krig, frihet, kjærlighet og samfunn.", "tags": ["Beat", "Soul", "Motown", "Folkrock", "Psykedelisk rock"], "playlist": ""}, {"key": "70", "label": "1970-tallet", "title": "Disco, punk – og hip-hop blir født", "sub": "Et av de mest mangfoldige tiårene", "p1": "1970-tallet rommer nesten alt samtidig: hardrock, progrock, singer-songwriters, funk, glam, disco og punk. Disco gjør klubben og dansegulvet til et sentrum for populærkulturen, mens punk reagerer mot det polerte og kompliserte med kortere, råere og mer direkte musikk.", "p2": "I Bronx i New York begynner DJ-er tidlig på 1970-tallet å isolere og forlenge rytmiske «breaks» fra funk-, soul- og discoplater. MC-er snakker og rimer over rytmene, mens breaking og graffiti blir del av den samme kulturen. Dette utvikler seg til hip-hop.", "highlight": "Rap var altså ikke bare en ny måte å synge på. Hip-hop gjorde platespilleren til et instrument, sampling og rytmisk gjenbruk til skapende verktøy, og ga nye grupper en direkte måte å fortelle om egne liv og omgivelser.", "tags": ["Disco", "Funk", "Punk", "Hardrock", "Hip-hop"], "playlist": "", "source": "https://nmaahc.si.edu/explore/stories/hip-hop-bronx", "sourceLabel": "Smithsonian: Hip-Hop in the Bronx"}, {"key": "80", "label": "1980-tallet", "title": "Musikken blir visuell – og hip-hop vokser", "sub": "Synthesizere, trommemaskiner, MTV og CD", "p1": "Synthesizere og trommemaskiner setter et tydelig preg på 1980-tallet. Popproduksjoner blir større og glattere, og musikkvideoen får enorm betydning. Artister må ikke bare høres – de skal også ha et visuelt uttrykk.", "p2": "Samtidig går hip-hop fra lokale miljøer til et langt større publikum. Rap, DJ-ing, scratching og sampling blir stadig mer avansert. Mot slutten av tiåret brukes hip-hop også tydelig til politiske og sosiale kommentarer.", "highlight": "Hip-hop begynner å påvirke hvordan popmusikk bygges opp: fokus på beat, sampling, remix og rytmisk vokal sprer seg langt utenfor selve rap-sjangeren.", "tags": ["Synthpop", "New wave", "Pop", "Metal", "Hip-hop"], "playlist": "", "source": "https://americanhistory.si.edu/press/releases/hip-hop-comes-smithsonian", "sourceLabel": "Smithsonian: Hip-Hop Comes to the Smithsonian"}, {"key": "90", "label": "1990-tallet", "title": "Alt splittes opp – og alt møtes", "sub": "Grunge, elektronika, R&B og rap i sentrum", "p1": "1990-tallet har ikke én dominerende lyd. Grunge og alternativ rock bryter med mye av 80-tallets polerte uttrykk, britpop vokser fram, elektronisk dansemusikk får større plass, og moderne R&B blir en sentral del av popbildet.", "p2": "Rap går fra å være en voksende sjanger til å bli en av de viktigste kreftene i populærmusikken. Ulike regionale uttrykk, gangsta rap, mer bevisst og politisk rap og nye produksjonsstiler gjør hip-hop stadig bredere.", "highlight": "Innflytelsen merkes også utenfor musikken: språk, klær, dans, grafisk uttrykk og ungdomskultur påvirkes av hip-hop i store deler av verden.", "tags": ["Grunge", "Britpop", "R&B", "Techno", "House", "Rap"], "playlist": "", "source": "https://americanhistory.si.edu/press/releases/national-museum-american-history-displays-recent-hip-hop-acquisitions", "sourceLabel": "Smithsonian: hip-hop som global kultur"}, {"key": "00", "label": "2000-tallet", "title": "Internett endrer hvordan vi finner musikk", "sub": "MP3, nedlasting, YouTube og en ny musikkøkonomi", "p1": "På 2000-tallet blir selve måten vi skaffer musikk på forandret. MP3-filer, fildeling, digitale musikkbutikker og etter hvert YouTube gjør at man ikke lenger er avhengig av platebutikken eller radioen for å oppdage nye artister.", "p2": "Hip-hop og R&B ligger tett på sentrum av mainstream-pop, mens elektronisk musikk og produksjonsteknikker blir stadig viktigere på tvers av sjangre. Samarbeid mellom rappere, popartister og produsenter blir vanlig.", "highlight": "Albumet mister gradvis noe av rollen som den eneste måten å presentere musikk på. Enkeltlåter kan spres raskt på nettet og nå et internasjonalt publikum uten de gamle distribusjonsveiene.", "tags": ["Hip-hop", "R&B", "Indierock", "Pop-punk", "Elektronika"], "playlist": ""}, {"key": "10", "label": "2010-tallet", "title": "Streaming tar over", "sub": "Hele musikkbiblioteket flytter inn i mobilen", "p1": "På 2010-tallet blir streaming den dominerende måten mange hører musikk på. I stedet for å kjøpe én plate eller én fil får lytteren tilgang til enorme kataloger. Spillelister og anbefalingssystemer blir nye innganger til musikk.", "p2": "Sjangrene flyter mer sammen. Hip-hop – særlig trap-inspirert produksjon – setter dype spor i pop, R&B og elektronisk musikk. Samtidig gjør streaming og sosiale medier det lettere for latinamerikansk pop, K-pop og andre regionale uttrykk å få et globalt publikum.", "highlight": "Rap og hip-hop går fra å påvirke populærmusikken til i stor grad å være en del av selve grunnspråket i moderne popproduksjon: beats, flow, sampling og produsentkultur finnes overalt.", "tags": ["Streaming", "Trap", "EDM", "K-pop", "Latin pop", "Indie"], "playlist": "", "source": "https://www.ifpi.org/wp-content/uploads/2020/03/GMR2021_STATE_OF_THE_INDUSTRY.pdf", "sourceLabel": "IFPI: utviklingen i streaming"}, {"key": "20", "label": "2020–2026", "title": "Musikken har ingen faste grenser", "sub": "Streaming, korte videoer, gamle hits og nye verktøy", "p1": "I 2020-årene kan en låt bli verdensomspennende gjennom streaming eller korte videoer på svært kort tid. Nye artister konkurrerer om oppmerksomheten side om side med eldre katalogmusikk, og en flere tiår gammel sang kan plutselig få et nytt liv.", "p2": "Skillet mellom sjangrene blir stadig mindre tydelig. Pop kan inneholde rap, country, elektronika, rock og latinamerikanske rytmer i samme produksjon. Samtidig har vinyl fått en ny rolle som fysisk samleobjekt – midt i en ellers svært digital musikkhverdag.", "highlight": "I 2025 sto streaming for 69,6 % av globale inntekter fra innspilt musikk. Det sier mye om hvor langt vi har beveget oss fra grammofonplaten som møtte verden i 1946.", "tags": ["Streaming", "Genreblanding", "Kortvideo", "Vinyl-revival", "AI-verktøy"], "playlist": "", "source": "https://www.ifpi.org/wp-content/uploads/2026/03/GMR2026_SOTI.pdf", "sourceLabel": "IFPI Global Music Report 2026"}];
+const decadeStories = [{"key": "40", "label": "1946–1949", "title": "Etterkrigstid, swing og croonere", "sub": "De første årene i tidsreisen", "p1": "Da tidsreisen begynner i 1946, er storband, swing, jazz og vokalpop fortsatt viktige deler av populærmusikken. Radioen er sentral, og grammofonplaten er et fysisk produkt man setter seg ned for å høre på.", "p2": "Samtidig ligger spirene til noe nytt i rhythm & blues, gospel og elektrisk blues. Sterkere rytmer, elektriske gitarer og nye innspillingsmetoder skal snart være med på å skape rock'n'roll.", "highlight": "Musikken begynner gradvis å gå fra storbandenes epoke til mindre grupper, tydeligere rytmer og en mer ungdomsrettet lyd.", "tags": ["Swing", "Jazz", "Vokalpop", "Rhythm & blues"], "playlist": "https://music.youtube.com/playlist?list=PLQPNx9sYOiOw&si=T7QliJ4nOxzgClCb"}, {"key": "50", "label": "1950-tallet", "title": "Rock'n'roll skaper en ungdomskultur", "sub": "Gitaren, 45-platen og tenåringene", "p1": "På 1950-tallet bryter rock'n'roll for alvor gjennom. Musikken henter mye fra afroamerikansk rhythm & blues, gospel og blues, samtidig som den blandes med country. Artister som Chuck Berry, Little Richard og Elvis Presley blir symboler på en ny lyd.", "p2": "Dette er også tiåret hvor tenåringer blir en tydelig målgruppe for musikkindustrien. Billigere platespillere, 45-plater, radio og etter hvert transistorapparater gjør det lettere å ha sin egen musikk – uavhengig av foreldrenes smak.", "highlight": "Rock'n'roll endrer ikke bare lyden. Den gjør populærmusikken til en sterkere del av ungdomsidentitet, mote og opprør.", "tags": ["Rock'n'roll", "Rhythm & blues", "Doo-wop", "Country"], "playlist": ""}, {"key": "60", "label": "1960-tallet", "title": "Pop, soul og studioet som instrument", "sub": "Beatles, Motown og store samfunnsendringer", "p1": "1960-tallet eksploderer i ulike retninger. The Beatles og andre britiske band får enorm internasjonal betydning, Motown gjør soul til stor popmusikk, og folkrock knytter musikken tett til protest, politikk og samfunnsendringer.", "p2": "Mot slutten av tiåret blir studioet nesten et instrument i seg selv. Flersporsopptak, nye effekter og eksperimentering gjør det mulig å lage musikk som ikke nødvendigvis kan gjenskapes på samme måte på en scene.", "highlight": "Populærmusikk blir i større grad et sted der en hel generasjon diskuterer identitet, krig, frihet, kjærlighet og samfunn.", "tags": ["Beat", "Soul", "Motown", "Folkrock", "Psykedelisk rock"], "playlist": ""}, {"key": "70", "label": "1970-tallet", "title": "Disco, punk – og hip-hop blir født", "sub": "Et av de mest mangfoldige tiårene", "p1": "1970-tallet rommer nesten alt samtidig: hardrock, progrock, singer-songwriters, funk, glam, disco og punk. Disco gjør klubben og dansegulvet til et sentrum for populærkulturen, mens punk reagerer mot det polerte og kompliserte med kortere, råere og mer direkte musikk.", "p2": "I Bronx i New York begynner DJ-er tidlig på 1970-tallet å isolere og forlenge rytmiske «breaks» fra funk-, soul- og discoplater. MC-er snakker og rimer over rytmene, mens breaking og graffiti blir del av den samme kulturen. Dette utvikler seg til hip-hop.", "highlight": "Rap var altså ikke bare en ny måte å synge på. Hip-hop gjorde platespilleren til et instrument, sampling og rytmisk gjenbruk til skapende verktøy, og ga nye grupper en direkte måte å fortelle om egne liv og omgivelser.", "tags": ["Disco", "Funk", "Punk", "Hardrock", "Hip-hop"], "playlist": "", "source": "https://nmaahc.si.edu/explore/stories/hip-hop-bronx", "sourceLabel": "Smithsonian: Hip-Hop in the Bronx"}, {"key": "80", "label": "1980-tallet", "title": "Musikken blir visuell – og hip-hop vokser", "sub": "Synthesizere, trommemaskiner, MTV og CD", "p1": "Synthesizere og trommemaskiner setter et tydelig preg på 1980-tallet. Popproduksjoner blir større og glattere, og musikkvideoen får enorm betydning. Artister må ikke bare høres – de skal også ha et visuelt uttrykk.", "p2": "Samtidig går hip-hop fra lokale miljøer til et langt større publikum. Rap, DJ-ing, scratching og sampling blir stadig mer avansert. Mot slutten av tiåret brukes hip-hop også tydelig til politiske og sosiale kommentarer.", "highlight": "Hip-hop begynner å påvirke hvordan popmusikk bygges opp: fokus på beat, sampling, remix og rytmisk vokal sprer seg langt utenfor selve rap-sjangeren.", "tags": ["Synthpop", "New wave", "Pop", "Metal", "Hip-hop"], "playlist": "", "source": "https://americanhistory.si.edu/press/releases/hip-hop-comes-smithsonian", "sourceLabel": "Smithsonian: Hip-Hop Comes to the Smithsonian"}, {"key": "90", "label": "1990-tallet", "title": "Alt splittes opp – og alt møtes", "sub": "Grunge, elektronika, R&B og rap i sentrum", "p1": "1990-tallet har ikke én dominerende lyd. Grunge og alternativ rock bryter med mye av 80-tallets polerte uttrykk, britpop vokser fram, elektronisk dansemusikk får større plass, og moderne R&B blir en sentral del av popbildet.", "p2": "Rap går fra å være en voksende sjanger til å bli en av de viktigste kreftene i populærmusikken. Ulike regionale uttrykk, gangsta rap, mer bevisst og politisk rap og nye produksjonsstiler gjør hip-hop stadig bredere.", "highlight": "Innflytelsen merkes også utenfor musikken: språk, klær, dans, grafisk uttrykk og ungdomskultur påvirkes av hip-hop i store deler av verden.", "tags": ["Grunge", "Britpop", "R&B", "Techno", "House", "Rap"], "playlist": "", "source": "https://americanhistory.si.edu/press/releases/national-museum-american-history-displays-recent-hip-hop-acquisitions", "sourceLabel": "Smithsonian: hip-hop som global kultur"}, {"key": "00", "label": "2000-tallet", "title": "Internett endrer hvordan vi finner musikk", "sub": "MP3, nedlasting, YouTube og en ny musikkøkonomi", "p1": "På 2000-tallet blir selve måten vi skaffer musikk på forandret. MP3-filer, fildeling, digitale musikkbutikker og etter hvert YouTube gjør at man ikke lenger er avhengig av platebutikken eller radioen for å oppdage nye artister.", "p2": "Hip-hop og R&B ligger tett på sentrum av mainstream-pop, mens elektronisk musikk og produksjonsteknikker blir stadig viktigere på tvers av sjangre. Samarbeid mellom rappere, popartister og produsenter blir vanlig.", "highlight": "Albumet mister gradvis noe av rollen som den eneste måten å presentere musikk på. Enkeltlåter kan spres raskt på nettet og nå et internasjonalt publikum uten de gamle distribusjonsveiene.", "tags": ["Hip-hop", "R&B", "Indierock", "Pop-punk", "Elektronika"], "playlist": ""}, {"key": "10", "label": "2010-tallet", "title": "Streaming tar over", "sub": "Hele musikkbiblioteket flytter inn i mobilen", "p1": "På 2010-tallet blir streaming den dominerende måten mange hører musikk på. I stedet for å kjøpe én plate eller én fil får lytteren tilgang til enorme kataloger. Spillelister og anbefalingssystemer blir nye innganger til musikk.", "p2": "Sjangrene flyter mer sammen. Hip-hop – særlig trap-inspirert produksjon – setter dype spor i pop, R&B og elektronisk musikk. Samtidig gjør streaming og sosiale medier det lettere for latinamerikansk pop, K-pop og andre regionale uttrykk å få et globalt publikum.", "highlight": "Rap og hip-hop går fra å påvirke populærmusikken til i stor grad å være en del av selve grunnspråket i moderne popproduksjon: beats, flow, sampling og produsentkultur finnes overalt.", "tags": ["Streaming", "Trap", "EDM", "K-pop", "Latin pop", "Indie"], "playlist": "", "source": "https://www.ifpi.org/wp-content/uploads/2020/03/GMR2021_STATE_OF_THE_INDUSTRY.pdf", "sourceLabel": "IFPI: utviklingen i streaming"}, {"key": "20", "label": "2020–2026", "title": "Musikken har ingen faste grenser", "sub": "Streaming, korte videoer, gamle hits og nye verktøy", "p1": "I 2020-årene kan en låt bli verdensomspennende gjennom streaming eller korte videoer på svært kort tid. Nye artister konkurrerer om oppmerksomheten side om side med eldre katalogmusikk, og en flere tiår gammel sang kan plutselig få et nytt liv.", "p2": "Skillet mellom sjangrene blir stadig mindre tydelig. Pop kan inneholde rap, country, elektronika, rock og latinamerikanske rytmer i samme produksjon. Samtidig har vinyl fått en ny rolle som fysisk samleobjekt – midt i en ellers svært digital musikkhverdag.", "highlight": "I 2025 sto streaming for 69,6 % av globale inntekter fra innspilt musikk. Det sier mye om hvor langt vi har beveget oss fra grammofonplaten som møtte verden i 1946.", "tags": ["Streaming", "Genreblanding", "Kortvideo", "Vinyl-revival", "AI-verktøy"], "playlist": "", "source": "https://www.ifpi.org/wp-content/uploads/2026/03/GMR2026_SOTI.pdf", "sourceLabel": "IFPI Global Music Report 2026"}];
 const historyGrid = document.getElementById("musicHistoryGrid");
 const historyFilters = document.getElementById("historyFilters");
 

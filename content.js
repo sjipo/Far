@@ -18,15 +18,15 @@
 // Behold bare den samme spillelisten/URL-en.
 
 const youtubePlaylists = {
-  "40": "", // 1946–1949 – lim inn YouTube-spillelisten mellom anførselstegnene
-  "50": "", // 1950-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "60": "", // 1960-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "70": "", // 1970-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "80": "", // 1980-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "90": "", // 1990-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "00": "", // 2000-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "10": "", // 2010-tallet – lim inn YouTube-spillelisten mellom anførselstegnene
-  "20": "", // 2020–2026 – lim inn YouTube-spillelisten mellom anførselstegnene
+  "40": "https://music.youtube.com/playlist?list=PLQPNx9sYOiOw&si=T7QliJ4nOxzgClCb", // 1946–1949
+  "50": "https://music.youtube.com/playlist?list=PLNGIqGR94ufU&si=wlKiRqSIekfXnDK9", // 1950-tallet
+  "60": "https://music.youtube.com/playlist?list=PLVib1p6jDv3g&si=3sMo9ybYCQBvNWFU", // 1960-tallet
+  "70": "https://music.youtube.com/playlist?list=PLfuoRAj95M0Q&si=daFKFs84lrShFehR", // 1970-tallet
+  "80": "https://music.youtube.com/playlist?list=PLSpnMUdcauVY&si=LZ8jN3RIteTCy1fR", // 1980-tallet
+  "90": "https://music.youtube.com/playlist?list=PLWH9caOOSXso&si=e-JsKDTOMCxXKVP7", // 1990-tallet
+  "00": "https://music.youtube.com/playlist?list=PLaPPuV7F774g&si=PuOBbJmXQ6LGU-OG", // 2000-tallet
+  "10": "https://music.youtube.com/playlist?list=PLFHELmHQTQlg&si=VfUJhGFocwOjKAdd", // 2010-tallet
+  "20": "https://music.youtube.com/playlist?list=PLYtWr_ajzRlc&si=LzdAvpNBjWFoPiFW", // 2020–2026
 };
 
 

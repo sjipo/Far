@@ -133,3 +133,26 @@ historyFilters.addEventListener("click", e => {
 });
 
 renderDecadeStories();
+
+
+// Fast hamburger-meny
+const menuToggle = document.getElementById("menuToggle");
+const siteMenu = document.getElementById("siteMenu");
+const menuClose = document.getElementById("menuClose");
+const menuBackdrop = document.getElementById("menuBackdrop");
+
+function setMenu(open){
+  siteMenu.classList.toggle("open", open);
+  siteMenu.setAttribute("aria-hidden", String(!open));
+  menuToggle.setAttribute("aria-expanded", String(open));
+  document.body.classList.toggle("menu-open", open);
+  menuBackdrop.hidden = !open;
+}
+menuToggle.addEventListener("click", () => setMenu(!siteMenu.classList.contains("open")));
+menuClose.addEventListener("click", () => setMenu(false));
+menuBackdrop.addEventListener("click", () => setMenu(false));
+siteMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape" && siteMenu.classList.contains("open")) setMenu(false);
+});
+
